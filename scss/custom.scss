@@ -1,5 +1,18 @@
 //variable overwrites must come first when overwriting across files
 $red: #e23400;
+$black: #1f1f1f;
+$gray: #2d2d2d;
+
+//CI relevant
+$primary: $red;
+//$secondary: white;
+
+$enable-rounded: false;
+
+$body-bg:                   $black;
+//body text color
+$body-color:                white;
+
 
 //default Bootstrap
  @import "../node_modules/bootstrap/scss/functions";
