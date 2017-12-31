@@ -37,13 +37,67 @@
 
     <section class="hero text-center">
       <div class="container">
-        <h1 style="margin-top: 100px">We are Rock!</h1>
+        <h1 class="display-1">We are Rock!</h1>
+          <!-- row specifies 12 units of space for the columns -->
           <div class="row justify-content-center">
-            <p class="lead"></p>
-            <div class="btn btn-primary"></div>
+            <!-- uses half the space (of 12) and centers it if the device is md(768px) or above.-->
+            <div class="col-md-6">
+              <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis fuga, harum iusto obcaecati dicta veritatis eveniet alias, cupiditate quia saepe fugit beatae culpa nihil. Omnis?</p>
+              <div class="btn btn-primary">Listen to our Music!</div>
+            </div>
           </div>
       </div>
     </section>
+
+    <secton class="about">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 about-title">
+            <h2>About</h2>
+          </div>
+          <div class="col-sm-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, ipsum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex earum corrupti hic totam, sunt libero dicta tenetur expedita nostrum autem voluptatum consequuntur sit, debitis consectetur.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aspernatur!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card border-0 bg-dark">
+              <img src="img/singer.jpg" alt="our singer" class="car-img-top">
+              <div class="card-block bg-dark">
+                <h3 class="card title text-primary bg-dark">Lorem ipsum</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti repellat explicabo deserunt, obcaecati ad!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-0 bg-dark">
+                <img src="img/guitar.jpg" alt="our singer" class="car-img-top">
+                <div class="card-block">
+                  <h3 class="card title text-primary bg-dark">Lorem ipsum</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti repellat explicabo deserunt, obcaecati ad!</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card border-0 bg-dark">
+                <img src="img/drummer.jpg" alt="our singer" class="car-img-top">
+                <div class="card-block">
+                  <h3 class="card title text-primary bg-dark">Lorem ipsum</h3>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti repellat explicabo deserunt, obcaecati ad!</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secton>
+
+    <div class="parallax"></div>
+    <section class="music"></section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- leave cdn here or npm init those from package.json -->
