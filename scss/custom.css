@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -4879,5 +4881,26 @@ a.text-dark:focus, a.text-dark:hover {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+body {
+  padding-top: 71px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 300; }
+
+.navbar-dark .navbar-brand {
+  font-family: "Lobster", cursive;
+  color: #e23400;
+  font-size: 30px; }
+
+.nav-item {
+  margin-left: 1.5em;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.hero {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  padding-top: 20vh;
+  padding-bottom: 25vh; }
 
 /*# sourceMappingURL=custom.css.map */
