@@ -2,6 +2,17 @@ body{
     padding-top: 71px; //the height of the fixed nav-bar +8
     
     font-family: $sans;
-    font-size: 1.3rem;
     font-weight: $_light;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $header-font;
+}
+
+h1{
+    color: $primary;
+}
+
+.lead{
+    margin-bottom: 2.1em;
 }

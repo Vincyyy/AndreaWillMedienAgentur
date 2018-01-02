@@ -1,7 +1,63 @@
 .hero{   
     background-image: url(../img/hero-bg.jpg);
     //height: 100vh; //viewport height full - page screen
+
+    //covers the div size
     background-size: cover;
+    background-position: bottom-center;
+
+    //vh = viewport height
     padding-top: 20vh;
     padding-bottom: 25vh;
 }
+
+.about-title{
+    background-image: url(../img/about-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    //keeps the image rectangular
+    min-height: 45vw;
+}
+
+.about-text{
+    padding-bottom: 6vh;
+    padding-top: 6vh;
+
+    @include media-breakpoint-up(md){
+        //more padding because of the overlapping cards on md+
+        padding-bottom: 15vh;
+        padding-top: 10vh;
+    }
+}
+
+.band-members{
+    position: relative;
+}
+
+.band-member{
+    margin-bottom: 1.5em;
+    box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
+    //only use logic if above md size
+    @include media-breakpoint-up(md){
+        //orientates at the nearest relative object or at the viewport 0,0 coordinates
+        position: absolute;
+        top: -2.5em;
+        //absolute lets the following content flow over it so z-axis needs to be reset.
+        z-index: 100;
+    }
+}
+
+.band-member-name{
+    font-family: $sans;
+    text-transform: uppercase;
+    margin-top: 0.8em;
+    margin-bottom: 0.25em;
+}
+ 
+.band-member-position{
+    color: $gray-light;
+}
+
+.card-text:last-child {
+    margin-bottom: 1.5em;
+  }

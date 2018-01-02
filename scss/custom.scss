@@ -2,6 +2,7 @@
 $red: #e23400;
 $black: #1f1f1f;
 $gray: #2d2d2d;
+$gray-light: lighten($gray,60%);
 
 //CI relevant
 $primary: $red;
@@ -9,10 +10,19 @@ $primary: $red;
 
 $enable-rounded: false;
 
-$body-bg:                   $black;
+$body-bg: $black;
 //body text color
-$body-color:                white;
+$body-color: white;
 
+$dark: #212529;
+
+//customize instead of writing additional css
+$display1-size: 10vw;
+$lead-font-size: 1.5rem;
+$font-size-base: 1.2rem;
+
+$btn-padding-x: 2.0rem;
+$btn-padding-y: .7em;
 
 //default Bootstrap
  @import "../node_modules/bootstrap/scss/functions";
@@ -58,3 +68,4 @@ $body-color:                white;
 @import "base/typography";
 @import "components/navigation";
 @import "pages/home";
+
