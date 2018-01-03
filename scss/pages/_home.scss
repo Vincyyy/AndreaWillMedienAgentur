@@ -67,6 +67,14 @@
     margin-bottom: 1.5em;
   }
 
+.card-img{
+    @include media-breakpoint-up(md){
+        max-height: 35vmax;
+    }
+
+    max-height: 60vmax;
+}
+
 .bg-black{
     background: $black;
 }
@@ -97,18 +105,13 @@
     font-size: .9em;
 }
 
-.shows h3{
+.show-title{
     font-family: $sans;
 }
 
 .show-info{
     display: flex;
     flex-direction: column;
-
-    .btn{
-        //align to end
-        margin-top: auto;
-    }
 }
 
 //selects all direct descendends

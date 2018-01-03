@@ -4986,6 +4986,12 @@ footer {
 .card-text:last-child {
   margin-bottom: 1.5em; }
 
+.card-img {
+  max-height: 60vmax; }
+  @media (min-width: 768px) {
+    .card-img {
+      max-height: 35vmax; } }
+
 .bg-black {
   background: #1f1f1f; }
 
@@ -5009,14 +5015,12 @@ footer {
   margin-top: 2em;
   font-size: .9em; }
 
-.shows h3 {
+.show-title {
   font-family: "Raleway", sans-serif; }
 
 .show-info {
   display: flex;
   flex-direction: column; }
-  .show-info .btn {
-    margin-top: auto; }
 
 .show-info > * {
   margin-bottom: 0; }
