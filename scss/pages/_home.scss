@@ -30,6 +30,10 @@
     }
 }
 
+.about-container{
+    background: $black;
+}
+
 .band-members{
     position: relative;
 }
@@ -37,6 +41,7 @@
 .band-member{
     margin-bottom: 1.5em;
     box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
+    background: $black;
     //only use logic if above md size
     @include media-breakpoint-up(md){
         //orientates at the nearest relative object or at the viewport 0,0 coordinates
@@ -61,3 +66,16 @@
 .card-text:last-child {
     margin-bottom: 1.5em;
   }
+
+.bg-black{
+    background: $black;
+}
+
+.music{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.music-container{
+    background: $black;
+}
