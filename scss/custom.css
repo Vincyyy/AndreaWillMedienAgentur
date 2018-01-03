@@ -4975,6 +4975,52 @@ h1 {
   margin-bottom: 5em; }
 
 .music-container {
-  background: #1f1f1f; }
+  background: #1f1f1f;
+  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
+  padding-top: 7vh;
+  padding-bottom: 7vh; }
+
+.music-title {
+  margin-bottom: .5em; }
+
+.music-cta {
+  margin-top: 2em; }
+
+.shows {
+  margin-top: 2em;
+  font-size: .9em; }
+
+.shows h3 {
+  font-family: "Raleway", sans-serif; }
+
+.show-info {
+  display: flex;
+  flex-direction: column; }
+  .show-info .btn {
+    margin-top: auto; }
+
+.show-info > * {
+  margin-bottom: 0; }
+
+.date {
+  font-weight: 600;
+  margin-top: 1.25em; }
+  .date::before {
+    content: '\f133';
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+    font-size: .9em; }
+
+.price {
+  font-weight: 600; }
+  .price small {
+    font-weight: 400; }
+  .price::before {
+    content: '\f145';
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 7px;
+    font-size: .9em; }
 
 /*# sourceMappingURL=custom.css.map */

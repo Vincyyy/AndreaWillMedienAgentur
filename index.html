@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Custom Bootstrap CSS -->
     <link rel="stylesheet" href="scss/custom.css">
 
@@ -12,7 +13,7 @@
   </head>
   <body>
     
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black">
       <a class="navbar-brand" href="#">AW Medienagentur</a>
       <button class="navbar-toggler"   type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -103,81 +104,83 @@
 
     <section class="music text-center">
       <div class="container music-container">
-        <h2 class="text-center display-2">Our music</h2>
+        <h2 class="text-center display-2 music-title">Our music</h2>
           <div class="row justify-content-center no-gutters">
-            <div class="col-sm-3">
+            <!-- col-md-3 trigger from md to upper else use columns (col) full row width -->
+            <div class="col-md-3 col">
               <img class="img-fluid" src="img/album-01.jpg" alt="album1">
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col">
               <img class="img-fluid" src="img/album-02.jpg" alt="album2">
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col">
               <img class="img-fluid" src="img/album-03.jpg" alt="album3">
             </div>
           </div>
           <div class="row justify-content-center no-gutters">
-            <div class="col-sm-3">
+            <div class="col-md-3 col">
               <img class="img-fluid" src="img/album-04.jpg" alt="album4">
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col">
               <img class="img-fluid" src="img/album-05.jpg" alt="album5">
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col">
               <img class="img-fluid" src="img/album-06.jpg" alt="album6">
             </div>
           </div>
+          <p class="music-cta">See something you like?</p>
+          <a href="#" class="btn btn-primary">Visit the store</a>
       </div>
-      <p>See something you like?</p>
-      <a href="#" class="btn btn-primary">Visit the store</a>
     </section>
 
-    <section class="shows">
+    <section class="upcoming-shows">
       <div class="container">
-        <h2>Upcoming</h2>
-        <div class="row no-gutters">
-          <div class="col-sm-3">
+        <h2 class="display-2 text-center">Upcoming</h2>
+        <div class="row no-gutters shows">
+          <!-- dual raster on small quad raster on md+-->
+          <div class="col-md-3 sm-6">
             <div class="card border-0">
               <img src="img/show-image-01.jpg" alt="show1" class="card-img">
-              <div class="card-img-overlay">
+              <div class="card-img-overlay show-info">
                 <h3>The Music Festival</h3>
                 <p>Montreal, QC, Kanada</p>
                 <p class="date">08.08.2018</p>
-                <p class="price"><small>starting at</small>19.99</p>
+                <p class="price"><small>starting at: </small>19.99</p>
                 <a href="#" class="btn btn-primary">Buy tickets</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3 sm-6">
             <div class="card border-0">
               <img src="img/show-image-02.jpg" alt="show2" class="card-img">
-              <div class="card-img-overlay">
+              <div class="card-img-overlay show-info">
                 <h3>The Music Festival</h3>
                 <p>Montreal, QC, Kanada</p>
                 <p class="date">08.08.2018</p>
-                <p class="price"><small>starting at</small>19.99</p>
+                <p class="price"><small>starting at: </small>19.99</p>
                 <a href="#" class="btn btn-primary">Buy tickets</a></div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3 sm-6">
             <div class="card border-0">
               <img src="img/show-image-03.jpg" alt="show3" class="card-img">
-              <div class="card-img-overlay">
+              <div class="card-img-overlay show-info">
                 <h3>The Music Festival</h3>
                 <p>Montreal, QC, Kanada</p>
                 <p class="date">08.08.2018</p>
-                <p class="price"><small>starting at</small>19.99</p>
+                <p class="price"><small>starting at: </small>19.99</p>
                 <a href="#" class="btn btn-primary">Buy tickets</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
+          <div class="col-md-3 sm-6">
             <div class="card border-0">
               <img src="img/show-image-04.jpg" alt="show4" class="card-img">
-              <div class="card-img-overlay">
+              <div class="card-img-overlay show-info">
                 <h3>The Music Festival</h3>
                 <p>Montreal, QC, Kanada</p>
                 <p class="date">08.08.2018</p>
-                <p class="price"><small>starting at</small>19.99</p>
+                <p class="price"><small>starting at: </small>19.99</p>
                 <a href="#" class="btn btn-primary">Buy tickets</a>
               </div>
             </div>

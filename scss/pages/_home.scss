@@ -78,4 +78,71 @@
 
 .music-container{
     background: $black;
+    //add mixin
+    box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
+
+.music-title{
+    margin-bottom: .5em;
+}
+
+.music-cta{
+    margin-top: 2em;
+}
+
+.shows{
+    margin-top: 2em;
+    font-size: .9em;
+}
+
+.shows h3{
+    font-family: $sans;
+}
+
+.show-info{
+    display: flex;
+    flex-direction: column;
+
+    .btn{
+        //align to end
+        margin-top: auto;
+    }
+}
+
+//selects all direct descendends
+.show-info > *{
+    margin-bottom: 0;
+}
+
+.date{
+    font-weight: $_bold;
+    margin-top: 1.25em;
+
+    &::before{
+        content: '\f133';
+        font-family: FontAwesome;
+        //inline block for positioning inside the row
+        display: inline-block;
+        margin-right: 7px;
+        font-size: .9em;
+    }
+}
+
+.price{
+    font-weight: $_bold;
+
+    small{
+        font-weight: $_normal;
+    }
+
+    &::before{
+        content: '\f145';
+        font-family: FontAwesome;
+        //inline block for positioning inside the row
+        display: inline-block;
+        margin-right: 7px;
+        font-size: .9em;
+    }
 }
