@@ -1,6 +1,10 @@
 .hero{   
-    background-image: url(../img/hero-bg.jpg);
-    //height: 100vh; //viewport height full - page screen
+    background:linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url(../img/img_awma/hero_bg_sized.jpg);
+    
+    height: 100vh; //viewport height full - page screen
 
     //covers the div size
     background-size: cover;
@@ -11,12 +15,19 @@
     padding-bottom: 25vh;
 }
 
-.about-title{
-    background-image: url(../img/about-bg.jpg);
-    background-size: cover;
-    background-position: center;
+.about-title-img{
+    max-height: 27vw;
+    box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
+    border-radius:50%;
+    overflow:hidden;
+    //background-size: 80vh;
+    //background-size: cover;
+    
     //keeps the image rectangular
-    min-height: 45vw;
+
+    @include media-breakpoint-down(md){
+        display: none;
+    }
 }
 
 .about-text{
@@ -31,17 +42,22 @@
 }
 
 .about-container{
-    background: $black;
+    background: $body-bg2;
 }
 
 .band-members{
     position: relative;
+
+    @include media-breakpoint-down(sm){
+        padding-top: 15vh;
+    }
+    
 }
 
 .band-member{
     margin-bottom: 1.5em;
     box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
-    background: $black;
+    background: $body-bg;
     //only use logic if above md size
     @include media-breakpoint-up(md){
         //orientates at the nearest relative object or at the viewport 0,0 coordinates
@@ -60,7 +76,7 @@
 }
  
 .band-member-position{
-    color: $gray-light;
+    color: black;
 }
 
 .card-text:last-child {
@@ -85,7 +101,7 @@
 }
 
 .music-container{
-    background: $black;
+    background: $body-bg2;
     //add mixin
     box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
     padding-top: 7vh;
