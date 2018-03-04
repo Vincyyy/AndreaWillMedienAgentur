@@ -404,6 +404,7 @@ mark,
   padding: 0.25rem;
   background-color: #d8d0d0;
   border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
   max-width: 100%;
   height: auto; }
 
@@ -435,7 +436,8 @@ kbd {
   padding: 0.2rem 0.4rem;
   font-size: 87.5%;
   color: #fff;
-  background-color: #212529; }
+  background-color: #212529;
+  border-radius: 0.2rem; }
   kbd kbd {
     padding: 0;
     font-size: 100%;
@@ -1382,7 +1384,7 @@ pre {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0;
+  border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .form-control::-ms-expand {
     background-color: transparent;
@@ -1447,7 +1449,8 @@ select.form-control:focus::-ms-value {
 .form-control-sm {
   padding: 0.25rem 0.5rem;
   font-size: 1.05rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  border-radius: 0.2rem; }
 
 select.form-control-sm:not([size]):not([multiple]) {
   height: calc(2.075rem + 2px); }
@@ -1455,7 +1458,8 @@ select.form-control-sm:not([size]):not([multiple]) {
 .form-control-lg {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  border-radius: 0.3rem; }
 
 select.form-control-lg:not([size]):not([multiple]) {
   height: calc(3.25rem + 2px); }
@@ -1689,7 +1693,7 @@ select.form-control-lg:not([size]):not([multiple]) {
   padding: 0.7em 2rem;
   font-size: 1.2rem;
   line-height: 1.5;
-  border-radius: 0;
+  border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   .btn:focus, .btn:hover {
     text-decoration: none; }
@@ -2047,13 +2051,13 @@ fieldset[disabled] a.btn {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   line-height: 1.5;
-  border-radius: 0; }
+  border-radius: 0.3rem; }
 
 .btn-sm {
   padding: 0.25rem 0.5rem;
   font-size: 1.05rem;
   line-height: 1.5;
-  border-radius: 0; }
+  border-radius: 0.2rem; }
 
 .btn-block {
   display: block;
@@ -2109,7 +2113,9 @@ tbody.collapse.show {
   .nav-tabs .nav-item {
     margin-bottom: -1px; }
   .nav-tabs .nav-link {
-    border: 1px solid transparent; }
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; }
     .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
       border-color: #e9ecef #e9ecef #dee2e6; }
     .nav-tabs .nav-link.disabled {
@@ -2122,8 +2128,12 @@ tbody.collapse.show {
     background-color: #d8d0d0;
     border-color: #dee2e6 #dee2e6 #d8d0d0; }
   .nav-tabs .dropdown-menu {
-    margin-top: -1px; }
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
 
+.nav-pills .nav-link {
+  border-radius: 0.25rem; }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
@@ -2196,7 +2206,8 @@ tbody.collapse.show {
   font-size: 1.5rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  border-radius: 0.25rem; }
   .navbar-toggler:focus, .navbar-toggler:hover {
     text-decoration: none; }
   .navbar-toggler:not([disabled]):not(.disabled) {
@@ -2422,10 +2433,17 @@ tbody.collapse.show {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(31, 31, 31, 0.125); }
+  border: 1px solid rgba(31, 31, 31, 0.125);
+  border-radius: 0.25rem; }
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
+  .card > .list-group:first-child .list-group-item:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; }
+  .card > .list-group:last-child .list-group-item:last-child {
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem; }
 
 .card-body {
   flex: 1 1 auto;
@@ -2451,6 +2469,8 @@ tbody.collapse.show {
   margin-bottom: 0;
   background-color: rgba(31, 31, 31, 0.03);
   border-bottom: 1px solid rgba(31, 31, 31, 0.125); }
+  .card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
   .card-header + .list-group .list-group-item:first-child {
     border-top: 0; }
 
@@ -2458,6 +2478,8 @@ tbody.collapse.show {
   padding: 0.75rem 1.25rem;
   background-color: rgba(31, 31, 31, 0.03);
   border-top: 1px solid rgba(31, 31, 31, 0.125); }
+  .card-footer:last-child {
+    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
 
 .card-header-tabs {
   margin-right: -0.625rem;
@@ -2478,13 +2500,18 @@ tbody.collapse.show {
   padding: 1.25rem; }
 
 .card-img {
-  width: 100%; }
+  width: 100%;
+  border-radius: calc(0.25rem - 1px); }
 
 .card-img-top {
-  width: 100%; }
+  width: 100%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px); }
 
 .card-img-bottom {
-  width: 100%; }
+  width: 100%;
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px); }
 
 .card-deck {
   display: flex;
@@ -2517,7 +2544,42 @@ tbody.collapse.show {
         margin-bottom: 0; }
         .card-group > .card + .card {
           margin-left: 0;
-          border-left: 0; } }
+          border-left: 0; }
+        .card-group > .card:first-child {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0; }
+          .card-group > .card:first-child .card-img-top,
+          .card-group > .card:first-child .card-header {
+            border-top-right-radius: 0; }
+          .card-group > .card:first-child .card-img-bottom,
+          .card-group > .card:first-child .card-footer {
+            border-bottom-right-radius: 0; }
+        .card-group > .card:last-child {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0; }
+          .card-group > .card:last-child .card-img-top,
+          .card-group > .card:last-child .card-header {
+            border-top-left-radius: 0; }
+          .card-group > .card:last-child .card-img-bottom,
+          .card-group > .card:last-child .card-footer {
+            border-bottom-left-radius: 0; }
+        .card-group > .card:only-child {
+          border-radius: 0.25rem; }
+          .card-group > .card:only-child .card-img-top,
+          .card-group > .card:only-child .card-header {
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem; }
+          .card-group > .card:only-child .card-img-bottom,
+          .card-group > .card:only-child .card-footer {
+            border-bottom-right-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem; }
+        .card-group > .card:not(:first-child):not(:last-child):not(:only-child) {
+          border-radius: 0; }
+          .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-top,
+          .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-img-bottom,
+          .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-header,
+          .card-group > .card:not(:first-child):not(:last-child):not(:only-child) .card-footer {
+            border-radius: 0; } }
 
 .card-columns .card {
   margin-bottom: 0.75rem; }
@@ -4894,6 +4956,14 @@ h1 {
 .lead {
   margin-bottom: 2.1em; }
 
+.skills-list {
+  list-style-type: none; }
+
+.skills-list li::before {
+  font-family: FontAwesome;
+  content: '\f00c';
+  margin: 0 5px 0 -15px; }
+
 .navbar-dark .navbar-brand {
   font-family: "Lobster", cursive;
   color: #e23400;
@@ -4946,8 +5016,9 @@ footer {
 
 .about-title-img {
   max-height: 27vw;
+  min-height: 27vw;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+  border-radius: 60%;
   overflow: hidden; }
   @media (max-width: 991.99px) {
     .about-title-img {
@@ -4962,9 +5033,13 @@ footer {
       padding-top: 10vh; } }
 
 .about-container {
-  background: #e23100c9; }
+  background: #e23100c9;
+  border-bottom: solid 1px;
+  border-top: solid 2px;
+  border-color: white; }
 
 .band-members {
+  border-top: 0px;
   position: relative; }
   @media (max-width: 767.99px) {
     .band-members {
@@ -4977,7 +5052,7 @@ footer {
   @media (min-width: 768px) {
     .band-member {
       position: absolute;
-      top: -2.5em;
+      top: -2.0em;
       z-index: 100; } }
 
 .band-member-name {

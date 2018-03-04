@@ -16,3 +16,13 @@ h1{
 .lead{
     margin-bottom: 2.1em;
 }
+
+.skills-list{
+    list-style-type: none;
+ }
+ 
+ .skills-list li::before{
+     font-family: FontAwesome;
+     content: '\f00c';
+     margin:0 5px 0 -15px;
+ }
