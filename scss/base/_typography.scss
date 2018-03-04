@@ -1,3 +1,7 @@
+.company-name{
+ font-weight: $_bold;   
+}
+
 body{
     //padding-top: 71px; //the height of the fixed nav-bar +8
     
@@ -25,4 +29,14 @@ h1{
      font-family: FontAwesome;
      content: '\f00c';
      margin:0 5px 0 -15px;
+ }
+
+ .services-list{
+     list-style-type: none;
+ }
+
+ .services-list li{
+     color: $black;
+     content: '\f12e';
+     margin:0 0 0 -25px;
  }

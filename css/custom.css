@@ -4943,6 +4943,9 @@ a.text-dark:focus, a.text-dark:hover {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
+.company-name {
+  font-weight: 700; }
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 300; }
@@ -4963,6 +4966,14 @@ h1 {
   font-family: FontAwesome;
   content: '\f00c';
   margin: 0 5px 0 -15px; }
+
+.services-list {
+  list-style-type: none; }
+
+.services-list li {
+  color: #1f1f1f;
+  content: '\f12e';
+  margin: 0 0 0 -25px; }
 
 .navbar-dark .navbar-brand {
   font-family: "Lobster", cursive;
@@ -5043,7 +5054,7 @@ footer {
   position: relative; }
   @media (max-width: 767.99px) {
     .band-members {
-      padding-top: 15vh; } }
+      padding-top: 10vh; } }
 
 .band-member {
   margin-bottom: 1.5em;
@@ -5052,14 +5063,15 @@ footer {
   @media (min-width: 768px) {
     .band-member {
       position: absolute;
-      top: -2.0em;
+      top: -1.5em;
       z-index: 100; } }
 
 .band-member-name {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   margin-top: 0.8em;
-  margin-bottom: 0.25em; }
+  margin-bottom: 0.25em;
+  border: 0; }
 
 .band-member-position {
   color: black; }
@@ -5077,8 +5089,12 @@ footer {
   background: #1f1f1f; }
 
 .music {
-  margin-top: 5em;
-  margin-bottom: 5em; }
+  margin-top: 2.5em;
+  margin-bottom: 2.5em; }
+  @media (min-width: 768px) {
+    .music {
+      margin-top: 5em;
+      margin-bottom: 5em; } }
 
 .music-container {
   background: #e23100c9;
@@ -5090,6 +5106,9 @@ footer {
   margin-bottom: .5em; }
 
 .music-cta {
+  margin-top: 2em; }
+
+.upcoming-shows {
   margin-top: 2em; }
 
 .shows {
@@ -5107,7 +5126,7 @@ footer {
   margin-bottom: 0; }
 
 .date {
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 1.25em; }
   .date::before {
     content: '\f133';
@@ -5117,7 +5136,7 @@ footer {
     font-size: .9em; }
 
 .price {
-  font-weight: 600; }
+  font-weight: 700; }
   .price small {
     font-weight: 400; }
   .price::before {
