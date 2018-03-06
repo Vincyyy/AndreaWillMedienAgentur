@@ -4943,9 +4943,6 @@ a.text-dark:focus, a.text-dark:hover {
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important; } }
-.company-name {
-  font-weight: 700; }
-
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 300; }
@@ -4955,6 +4952,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   color: #e23400; }
+
+.nav-link {
+  font-weight: 900; }
+
+.company-name {
+  font-weight: 700; }
 
 .lead {
   margin-bottom: 2.1em; }
@@ -5016,6 +5019,12 @@ footer {
   color: #c6c6c6;
   display: inline-block;
   margin: 0 0.5em 0 2.3em; }
+
+.navbar-brand {
+  margin-left: 10vw; }
+
+.navbar-nav {
+  margin-right: 10vw; }
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/img_awma/hero_bg_sized.jpg);
@@ -5125,25 +5134,48 @@ footer {
 .show-info > * {
   margin-bottom: 0; }
 
-.date {
+.contact-text {
   font-weight: 700;
-  margin-top: 1.25em; }
-  .date::before {
-    content: '\f133';
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-right: 7px;
-    font-size: .9em; }
+  margin-top: 3vh;
+  font-size: 1.25em; }
 
-.price {
-  font-weight: 700; }
-  .price small {
-    font-weight: 400; }
-  .price::before {
-    content: '\f145';
-    font-family: FontAwesome;
-    display: inline-block;
-    margin-right: 7px;
-    font-size: .9em; }
+.contact-address {
+  margin-top: 5vh; }
+
+.contact-action-text {
+  font-weight: 900;
+  margin-top: 3vh;
+  font-size: 1.5em; }
+
+/*.date{
+    font-weight: $_bold;
+    margin-top: 1.25em;
+
+    &::before{
+        content: '\f133';
+        font-family: FontAwesome;
+        //inline block for positioning inside the row
+        display: inline-block;
+        margin-right: 7px;
+        font-size: .9em;
+    }
+}
+
+.price{
+    font-weight: $_bold;
+
+    small{
+        font-weight: $_normal;
+    }
+
+    &::before{
+        content: '\f145';
+        font-family: FontAwesome;
+        //inline block for positioning inside the row
+        display: inline-block;
+        margin-right: 7px;
+        font-size: .9em;
+    }
+}*/
 
 /*# sourceMappingURL=custom.css.map */
