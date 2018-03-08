@@ -150,10 +150,6 @@
     font-size: .9em;
 }
 
-.show-title{
-    font-family: $sans;
-}
-
 .show-info{
     display: flex;
     flex-direction: column;
@@ -164,22 +160,11 @@
     margin-bottom: 0;
 }
 
-.contact-text{
-    font-weight: $_bold;
-    margin-top: 3vh;
-    font-size: 1.25em;
-}
-
 
 .contact-address{
     margin-top: 5vh;
 }
 
-.contact-action-text{
-    font-weight: $_extra_bold;
-    margin-top: 3vh;
-    font-size: 1.5em;
-}
 /*.date{
     font-weight: $_bold;
     margin-top: 1.25em;

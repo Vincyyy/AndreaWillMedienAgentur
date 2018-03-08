@@ -13,6 +13,12 @@ h1{
     color: $primary;
 }
 
+h4{
+    font-weight: $_bold;
+    font-size: 1.25em;
+    font-family: $sans;
+}
+
 .nav-link{
     font-weight: $_extra_bold;
 }
