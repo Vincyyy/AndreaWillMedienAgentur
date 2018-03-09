@@ -1,5 +1,5 @@
 //variable overwrites must come first when overwriting across files
-$red: #e23400;
+$red: #AB2328;
 $black: #1f1f1f;
 $gray: #2d2d2d;
 $gray-light: lighten($gray,60%);
@@ -7,7 +7,7 @@ $gray-light: lighten($gray,60%);
 $enable-rounded: true;
 
 $body-bg: #d8d0d0;
-$body-bg2: #e23100c9;
+$body-bg2: $red;
 //body text color
 $body-color: white;
 
