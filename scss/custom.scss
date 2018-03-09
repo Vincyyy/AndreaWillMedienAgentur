@@ -4,10 +4,6 @@ $black: #1f1f1f;
 $gray: #2d2d2d;
 $gray-light: lighten($gray,60%);
 
-//CI relevant
-$primary: $red;
-//$secondary: white;
-
 $enable-rounded: true;
 
 $body-bg: #d8d0d0;
@@ -16,6 +12,11 @@ $body-bg2: #e23100c9;
 $body-color: white;
 
 $dark: #212529;
+
+//CI relevant
+$primary: $red;
+$secondary: $body-bg;
+//$secondary: white;
 
 //customize instead of writing additional css
 $display1-size: 10vw;

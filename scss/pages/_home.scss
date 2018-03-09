@@ -155,14 +155,20 @@
     flex-direction: column;
 }
 
+
+
 //selects all direct descendends
 .show-info > *{
     margin-bottom: 0;
 }
 
 
-.contact-address{
+.contact-text-spacer{
     margin-top: 5vh;
+}
+
+.contact-address-spacer{
+    margin-top: 2.5vh;
 }
 
 /*.date{
