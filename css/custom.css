@@ -5049,23 +5049,31 @@ footer {
   padding-top: 20vh;
   padding-bottom: 25vh; }
 
+.hero-heading {
+  font-size: 1.5rem;
+  font-weight: 600; }
+  @media screen and (max-height: 375px) {
+    .hero-heading {
+      font-size: 1.0rem;
+      font-weight: 600; } }
+
 .about-title-img {
   max-height: 27vw;
   min-height: 27vw;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
   border-radius: 60%;
   overflow: hidden; }
-  @media (max-width: 991.99px) {
+  @media (max-width: 767.99px) {
     .about-title-img {
       display: none; } }
 
 .about-text {
-  padding-bottom: 6vh;
-  padding-top: 6vh; }
-  @media (min-width: 768px) {
+  padding-bottom: 8vh;
+  padding-top: 7vh; }
+  @media (min-width: 992px) {
     .about-text {
-      padding-bottom: 15vh;
-      padding-top: 10vh; } }
+      padding-bottom: 16vh;
+      padding-top: 8vh; } }
 
 .about-container {
   background: #AB2328;
@@ -5083,12 +5091,16 @@ footer {
 .band-member {
   margin-bottom: 1.5em;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
-  background: #d8d0d0; }
+  background: #d8d0d0;
+  font-size: .9em; }
   @media (min-width: 768px) {
     .band-member {
       position: absolute;
       top: -1.5em;
-      z-index: 100; } }
+      z-index: 100;
+      min-height: 33vh;
+      max-width: 33vw;
+      word-break: break-all; } }
 
 .band-member-name {
   font-family: "Raleway", sans-serif;
@@ -5132,55 +5144,25 @@ footer {
 .music-cta {
   margin-top: 2em; }
 
-.upcoming-shows {
-  margin-top: 2em; }
+.contact {
+  margin-top: 6vh; }
 
-.shows {
-  margin-top: 2em;
+@media (max-width: 991.99px) {
+  .contact-heading {
+    display: none; } }
+
+.contact-cards {
+  margin-top: 2.5em;
   font-size: .9em; }
 
-.show-info {
+.contact-info {
   display: flex;
-  flex-direction: column; }
-
-.show-info > * {
-  margin-bottom: 0; }
+  flex-direction: column;
+  background-color: #AB2328;
+  padding-top: 2vh;
+  padding-bottom: 2vh; }
 
 .contact-text-spacer {
   margin-top: 5vh; }
-
-.contact-address-spacer {
-  margin-top: 2.5vh; }
-
-/*.date{
-    font-weight: $_bold;
-    margin-top: 1.25em;
-
-    &::before{
-        content: '\f133';
-        font-family: FontAwesome;
-        //inline block for positioning inside the row
-        display: inline-block;
-        margin-right: 7px;
-        font-size: .9em;
-    }
-}
-
-.price{
-    font-weight: $_bold;
-
-    small{
-        font-weight: $_normal;
-    }
-
-    &::before{
-        content: '\f145';
-        font-family: FontAwesome;
-        //inline block for positioning inside the row
-        display: inline-block;
-        margin-right: 7px;
-        font-size: .9em;
-    }
-}*/
 
 /*# sourceMappingURL=custom.css.map */

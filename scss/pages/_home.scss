@@ -28,6 +28,18 @@
     padding-bottom: 25vh;
 }
 
+.hero-heading{
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    $iphone-horizontal-height: 375px;
+
+    @media screen and (max-height: $iphone-horizontal-height) {
+        font-size: 1.0rem;
+        font-weight: 600;
+    }
+}
+
 .about-title-img{
     max-height: 27vw;
     min-height:  27vw;
@@ -39,19 +51,19 @@
     
     //keeps the image rectangular
 
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(sm){
         display: none;
     }
 }
 
 .about-text{
-    padding-bottom: 6vh;
-    padding-top: 6vh;
+    padding-bottom:8vh;
+    padding-top: 7vh;
 
-    @include media-breakpoint-up(md){
+    @include media-breakpoint-up(lg){
         //more padding because of the overlapping cards on md+
-        padding-bottom: 15vh;
-        padding-top: 10vh;
+        padding-bottom: 16vh;
+        padding-top: 8vh;
     }
 }
 
@@ -65,19 +77,20 @@
 .band-members{
     border-top: 0px;
 
+    //orientation coordinates for next absolute object
     position: relative;
 
     @include media-breakpoint-down(sm){
         padding-top: 10vh;
         //padding-bottom: 10vh;
-    }
-    
+    }    
 }
 
 .band-member{
     margin-bottom: 1.5em;
     box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
     background: $body-bg;
+    font-size: .9em;
     //only use logic if above md size
     @include media-breakpoint-up(md){
         //orientates at the nearest relative object or at the viewport 0,0 coordinates
@@ -85,6 +98,9 @@
         top: -1.5em;
         //absolute lets the following content flow over it so z-axis needs to be reset.
         z-index: 100;
+        min-height: 33vh;
+        max-width: 33vw;
+        word-break: break-all;
     }
 }
 
@@ -95,6 +111,15 @@
     margin-bottom: 0.25em;
     border: 0;
 }
+
+// .contact-info{
+//     display: flex;
+//     flex-direction: column;
+//     background-color: $primary;
+
+//     padding-top: 2vh;
+//     padding-bottom: 2vh;
+// }
  
 .band-member-position{
     color: black;
@@ -141,63 +166,36 @@
     margin-top: 2em;
 }
 
-.upcoming-shows{
-    margin-top: 2em;
+.contact{
+    margin-top: 6vh;
 }
 
-.shows{
-    margin-top: 2em;
+.contact-heading{
+    @include media-breakpoint-down(md){
+        display:none;
+    }
+}
+
+.contact-cards{
+    margin-top: 2.5em;
     font-size: .9em;
 }
 
-.show-info{
+.contact-info{
     display: flex;
     flex-direction: column;
+    background-color: $primary;
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
-
-
-//selects all direct descendends
-.show-info > *{
-    margin-bottom: 0;
-}
+// //selects all direct descendends
+// .contact-info > *{
+//     margin-bottom: 0;
+// }
 
 
 .contact-text-spacer{
     margin-top: 5vh;
 }
-
-.contact-address-spacer{
-    margin-top: 2.5vh;
-}
-
-/*.date{
-    font-weight: $_bold;
-    margin-top: 1.25em;
-
-    &::before{
-        content: '\f133';
-        font-family: FontAwesome;
-        //inline block for positioning inside the row
-        display: inline-block;
-        margin-right: 7px;
-        font-size: .9em;
-    }
-}
-
-.price{
-    font-weight: $_bold;
-
-    small{
-        font-weight: $_normal;
-    }
-
-    &::before{
-        content: '\f145';
-        font-family: FontAwesome;
-        //inline block for positioning inside the row
-        display: inline-block;
-        margin-right: 7px;
-        font-size: .9em;
-    }
-}*/
