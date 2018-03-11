@@ -4962,9 +4962,6 @@ h4 {
 .nav-link {
   font-weight: 900; }
 
-.company-name {
-  font-weight: 700; }
-
 .lead {
   margin-bottom: 2.1em; }
 
@@ -5011,20 +5008,32 @@ footer {
   margin-top: 4em;
   background: #AB2328;
   padding: 2em 0 1.5em;
-  color: #c6c6c6;
   text-align: center; }
   @media (min-width: 992px) {
     footer {
       text-align: left; } }
 
-.social-link:not(:first-of-type)::before {
-  content: '/';
-  color: rgba(198, 198, 198, 0.4); }
-
 .social-link a {
-  color: #c6c6c6;
+  color: white;
   display: inline-block;
   margin: 0 0.5em 0 2.3em; }
+
+.social-links {
+  justify-content: center; }
+
+@media (min-width: 576px) {
+  .social-list {
+    margin-left: auto; } }
+
+.fb ::before {
+  font-family: FontAwesome;
+  content: '\f082';
+  font-size: 50px; }
+
+.gplus ::before {
+  font-family: FontAwesome;
+  content: '\f0d4';
+  font-size: 50px; }
 
 .navbar-brand {
   margin-left: 10vw; }
