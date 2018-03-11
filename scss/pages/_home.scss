@@ -1,3 +1,5 @@
+$smartphone2018-horizontal-height: 412px;
+
 .navbar-brand{
     margin-left: 10vw;
 }
@@ -25,19 +27,50 @@
 
     //vh = viewport height
     padding-top: 20vh;
-    padding-bottom: 25vh;
+    padding-bottom: 20vh;
 }
 
-.hero-heading{
+
+.hero-heading {
+    font-size: 12vw;
+    font-weight: 600;
+    line-height: 1.2;
+    
+    //iphone adjustion
+    @media screen and (max-height: $smartphone2018-horizontal-height) {
+        font-size: 8vw;
+        margin-bottom: 15vh;
+    }
+}
+
+.hero-text{
     font-size: 1.5rem;
     font-weight: 600;
 
-    $iphone-horizontal-height: 375px;
-
-    @media screen and (max-height: $iphone-horizontal-height) {
+    @media screen and (max-height: $smartphone2018-horizontal-height) {
         font-size: 1.0rem;
         font-weight: 600;
     }
+}
+
+//to stretch flex-layout over the fullscreen section
+.hero-container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-title-img{
