@@ -5037,11 +5037,28 @@ footer {
   content: '\f0d4';
   font-size: 50px; }
 
+.navbar {
+  transition: .7s; }
+
 .navbar-brand {
-  margin-left: 10vw; }
+  margin-left: 2vw; }
 
 .navbar-nav {
   margin-right: 10vw; }
+
+nav.black {
+  background: #fff !important;
+  height: 9vh;
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.5); }
+
+nav.black .navbar-brand img {
+  content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
+  height: 100px;
+  width: 100px; }
+
+nav.black .collapse {
+  justify-content: center !important;
+  transition: .5s; }
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/img_awma/hero_bg_sized.jpg);
