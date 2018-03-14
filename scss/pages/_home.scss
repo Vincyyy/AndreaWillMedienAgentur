@@ -1,33 +1,52 @@
 $smartphone2018-horizontal-height: 412px;
 
-.navbar{
-    transition: .7s;
-}
-
 .navbar-brand{
-    margin-left: 2vw;
+     margin-left: 2vw;
 }
 
 .navbar-nav{
-    margin-right: 10vw;
+     margin-right: 10vw;
 }
 
+.navbar{
+    @include media-breakpoint-down(md){
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%) !important;
+        box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.5);
+    }
+    transition: 0.8s;
+    background-image: linear-gradient(to bottom, #eef1f5 5%, rgba(46,56,66,0) 102%);
+}
+
+//remove nav image to keep navbar small on sm devices
+nav .navbar-brand img{
+    @include media-breakpoint-down(md){
+        display: none;
+    }
+}
+
+//transform header on large screens on scroll
 nav.black {
-   background: $white !important;
-   height: 9vh;
-   box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.5);
+    @include media-breakpoint-up(lg){
+        background: $white !important;
+        height: 9vh;
+        box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.5);
+    }
 }
 
+//smaller logo
 nav.black .navbar-brand img{
-    content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
-    height: 100px;
-    width: 100px;
-    //margin-left: 20vw;
+    @include media-breakpoint-up(lg){
+        content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
+        height: 100px;
+        width: 100px;
+    }
 }
 
 nav.black .collapse{
-    justify-content: center !important;
-    transition: .5s;
+    @include media-breakpoint-up(lg){
+        justify-content: center !important;
+        transition: .5s;
+    }
 }
 
 .hero{   
@@ -52,6 +71,7 @@ nav.black .collapse{
     font-size: 12vw;
     font-weight: 600;
     line-height: 1.2;
+    padding-top: 3vh;
     
     //iphone adjustion
     @media screen and (max-height: $smartphone2018-horizontal-height) {
