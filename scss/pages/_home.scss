@@ -24,6 +24,19 @@ nav .navbar-brand img{
     }
 }
 
+nav a.navbar-brand::after{
+    @include media-breakpoint-down(md){
+        font-family: $sans;
+        font-weight: $_bold;
+        color: $red;
+        content: "\039B "+" W M "+"\039B";
+    }
+}
+
+nav .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(171, 35, 40)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
 //transform header on large screens on scroll
 nav.black {
     @include media-breakpoint-up(lg){
@@ -33,7 +46,6 @@ nav.black {
     }
 }
 
-//smaller logo
 nav.black .navbar-brand img{
     @include media-breakpoint-up(lg){
         content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
@@ -66,8 +78,7 @@ nav.black .collapse{
     padding-bottom: 20vh;
 }
 
-
-.hero-heading {
+.hero-heading{
     font-size: 12vw;
     font-weight: 600;
     line-height: 1.2;
@@ -78,11 +89,28 @@ nav.black .collapse{
         font-size: 8vw;
         margin-bottom: 15vh;
     }
+
+    //then display logo instead
+    @include media-breakpoint-down(md){ //down-sm vs down-md?
+        display: none;
+    }
 }
+
+ .hero-logo{
+     @include media-breakpoint-up(lg){
+         display: none;
+     }
+
+     max-width: 90vw;
+     margin-bottom: 15vh;
+}
+
+
 
 .hero-text{
     font-size: 1.5rem;
     font-weight: 600;
+    margin-bottom: 5vh;
 
     @media screen and (max-height: $smartphone2018-horizontal-height) {
         font-size: 1.0rem;

@@ -1,9 +1,13 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@font-face{
+    font-family: "Aeg Flyon Now Regular";
+    src: url('../fonts/AegFlyonNow.ttf') format("truetype");
+}
 
 $sans: "Raleway", sans-serif;
-$decorative: "Raleway", cursive;
+$decorative: "Raleway", sans-serif;
 $header-font: $decorative;
 
 
