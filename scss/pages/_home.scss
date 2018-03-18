@@ -80,7 +80,7 @@ nav.black .collapse{
 
 .hero-heading{
     font-size: 12vw;
-    font-weight: 600;
+    font-weight: 590;
     line-height: 1.2;
     padding-top: 3vh;
     
@@ -109,7 +109,7 @@ nav.black .collapse{
 
 .hero-text{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 590;
     margin-bottom: 5vh;
 
     @media screen and (max-height: $smartphone2018-horizontal-height) {
@@ -196,9 +196,10 @@ nav.black .collapse{
         top: -1.5em;
         //absolute lets the following content flow over it so z-axis needs to be reset.
         z-index: 100;
-        min-height: 33vh;
+        //min-height: 33vh;
         max-width: 33vw;
-        word-break: break-all;
+        word-break: keep-all;
+        font-size: 1.0rem;
     }
 }
 
@@ -208,6 +209,10 @@ nav.black .collapse{
     margin-top: 0.8em;
     margin-bottom: 0.25em;
     border: 0;
+}
+
+.card-img-top{
+    max-height: 66vh;
 }
 
 // .contact-info{

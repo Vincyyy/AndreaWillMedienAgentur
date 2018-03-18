@@ -1,15 +1,19 @@
 //Fonts
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
 @font-face{
     font-family: "Aeg Flyon Now Regular";
     src: url('../fonts/AegFlyonNow.ttf') format("truetype");
 }
 
-$sans: "Raleway", sans-serif;
-$decorative: "Raleway", sans-serif;
-$header-font: $decorative;
+// $sans: "Raleway", sans-serif;
+// $decorative: "Raleway", sans-serif;
+// $header-font: $decorative;
 
+$sans: "Comfortaa", sans-serif;
+$decorative: "Comfortaa", sans-serif;
+$header-font: $decorative;
 
 $_light: 300;
 $_normal: 400;
