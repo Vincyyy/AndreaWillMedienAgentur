@@ -77,7 +77,8 @@ nav.black .collapse{
         rgba(0, 0, 0, 0.3)
       ), url(../img/img_awma/hero_bg_sized.jpg);
     
-    height: 100vh; //viewport height full - page screen
+    //height: 100vh; //viewport height full - page screen
+    height: 100%;
 
     //covers the div size
     background-size: cover;
@@ -112,6 +113,7 @@ nav.black .collapse{
      }
 
      max-width: 80vw;
+     //max-height: 17vh;
 }
 
 .hero-disclaimer{
@@ -120,6 +122,11 @@ nav.black .collapse{
 
     @media screen and (max-height: $smartphone2018-horizontal-height) {
         font-size: 0.9rem;
+    }
+
+    //then display logo instead
+    @include media-breakpoint-down(md){ //down-sm vs down-md?
+        display: none;
     }
 }
 
@@ -280,18 +287,11 @@ nav.black .collapse{
     margin-top: 2em;
 }
 
-.contact{
-    margin-top: 6vh;
-}
-
 .contact-heading{
-    @include media-breakpoint-down(md){
-        display:none;
-    }
+    margin-top: 8vw;
 }
 
 .contact-cards{
-    margin-top: 2.5em;
     font-size: .9em;
 }
 

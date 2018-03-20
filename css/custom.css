@@ -5089,7 +5089,7 @@ nav .navbar-toggler .navbar-toggler-icon {
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/img_awma/hero_bg_sized.jpg);
-  height: 100vh;
+  height: 100%;
   background-size: cover;
   background-position: bottom-center;
   padding-top: 20vh;
@@ -5120,6 +5120,9 @@ nav .navbar-toggler .navbar-toggler-icon {
   @media screen and (max-height: 412px) {
     .hero-disclaimer {
       font-size: 0.9rem; } }
+  @media (max-width: 991.99px) {
+    .hero-disclaimer {
+      display: none; } }
 
 .hero-text {
   font-size: 1.5rem;
@@ -5236,15 +5239,10 @@ nav .navbar-toggler .navbar-toggler-icon {
 .music-cta {
   margin-top: 2em; }
 
-.contact {
-  margin-top: 6vh; }
-
-@media (max-width: 991.99px) {
-  .contact-heading {
-    display: none; } }
+.contact-heading {
+  margin-top: 8vw; }
 
 .contact-cards {
-  margin-top: 2.5em;
   font-size: .9em; }
 
 .contact-info {
