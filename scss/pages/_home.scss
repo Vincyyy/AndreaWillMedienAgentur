@@ -111,15 +111,21 @@ nav.black .collapse{
          display: none;
      }
 
-     max-width: 90vw;
-     margin-bottom: 15vh;
+     max-width: 80vw;
 }
 
+.hero-disclaimer{
+    font-size: 1.1rem;
+    font-weight: 200;
 
+    @media screen and (max-height: $smartphone2018-horizontal-height) {
+        font-size: 0.9rem;
+    }
+}
 
 .hero-text{
     font-size: 1.5rem;
-    font-weight: 590;
+    font-weight: 600;
     margin-bottom: 5vh;
 
     @media screen and (max-height: $smartphone2018-horizontal-height) {

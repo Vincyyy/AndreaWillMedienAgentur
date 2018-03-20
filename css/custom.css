@@ -5109,15 +5109,21 @@ nav .navbar-toggler .navbar-toggler-icon {
       display: none; } }
 
 .hero-logo {
-  max-width: 90vw;
-  margin-bottom: 15vh; }
+  max-width: 80vw; }
   @media (min-width: 992px) {
     .hero-logo {
       display: none; } }
 
+.hero-disclaimer {
+  font-size: 1.1rem;
+  font-weight: 200; }
+  @media screen and (max-height: 412px) {
+    .hero-disclaimer {
+      font-size: 0.9rem; } }
+
 .hero-text {
   font-size: 1.5rem;
-  font-weight: 590;
+  font-weight: 600;
   margin-bottom: 5vh; }
   @media screen and (max-height: 412px) {
     .hero-text {
@@ -5139,9 +5145,6 @@ nav .navbar-toggler .navbar-toggler-icon {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.about {
-  scroll-behavior: smooth; }
 
 .about-title-img {
   max-height: 27vw;
