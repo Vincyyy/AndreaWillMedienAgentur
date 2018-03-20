@@ -5240,7 +5240,11 @@ nav .navbar-toggler .navbar-toggler-icon {
   margin-top: 2em; }
 
 .contact-heading {
-  margin-top: 8vw; }
+  margin-top: 5vw;
+  margin-bottom: 1vh; }
+  @media (max-width: 991.99px) {
+    .contact-heading {
+      margin-top: 10vh; } }
 
 .contact-cards {
   font-size: .9em; }

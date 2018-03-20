@@ -288,7 +288,11 @@ nav.black .collapse{
 }
 
 .contact-heading{
-    margin-top: 8vw;
+    @include media-breakpoint-down(md){
+        margin-top:10vh;    
+    }
+    margin-top: 5vw;
+    margin-bottom: 1vh;
 }
 
 .contact-cards{
