@@ -1,5 +1,15 @@
 $smartphone2018-horizontal-height: 412px;
 
+:target:before {
+    content:"";
+    //ensures the new line
+    display:block;
+    height:10vh; /* fixed header height*/
+    //the margin from the new line
+    margin:-10vh 0 0; /* negative fixed header height */
+    scroll-behavior: smooth;
+  }
+
 .navbar-brand{
      margin-left: 2vw;
 }
@@ -10,11 +20,11 @@ $smartphone2018-horizontal-height: 412px;
 
 .navbar{
     @include media-breakpoint-down(md){
-        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 100%) !important;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 105%) !important;
         box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.5);
     }
     transition: 0.8s;
-    background-image: linear-gradient(to bottom, #eef1f5 5%, rgba(46,56,66,0) 102%);
+    background-image: linear-gradient(to bottom, #eef1f5 5%, rgba(46,56,66,0) 105%);
 }
 
 //remove nav image to keep navbar small on sm devices
@@ -35,7 +45,7 @@ nav a.navbar-brand::after{
 
 nav .navbar-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(171, 35, 40)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
+}
 
 //transform header on large screens on scroll
 nav.black {
@@ -144,10 +154,6 @@ nav.black .collapse{
     box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
     border-radius:60%;
     overflow:hidden;
-    //background-size: 80vh;
-    //background-size: cover;
-    
-    //keeps the image rectangular
 
     @include media-breakpoint-down(sm){
         display: none;
@@ -180,7 +186,6 @@ nav.black .collapse{
 
     @include media-breakpoint-down(sm){
         padding-top: 10vh;
-        //padding-bottom: 10vh;
     }    
 }
 
