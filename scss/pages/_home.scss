@@ -133,6 +133,7 @@ $smartphone2018-horizontal-height: 412px;
     box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
     background: $body-bg;
     font-size: .9em;
+
     //only use logic if above md size
     @include media-breakpoint-up(md){
         //orientates at the nearest relative object or at the viewport 0,0 coordinates
@@ -162,6 +163,7 @@ $smartphone2018-horizontal-height: 412px;
 
 .card-img-top{
     max-height: 66vh;
+    background-size: cover;
 }
 
 // .contact-info{
