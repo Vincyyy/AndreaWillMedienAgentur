@@ -1,8 +1,75 @@
-// .navbar-dark .navbar-brand{
-//     font-family: $decorative;
-//     color: $primary;
-//     font-size: 1.5rem;
-// }
+$smartphone2018-horizontal-height: 412px; 
+
+:target:before {
+    content:"";
+    //ensures the new line
+    display:block;
+    height:10vh; /* fixed header height*/
+    //the margin from the new line
+    margin:-10vh 0 0; /* negative fixed header height */
+    scroll-behavior: smooth;
+  }
+
+.navbar-brand{
+     margin-left: 2vw;
+}
+
+.navbar-nav{
+     margin-right: 10vw;
+}
+
+.navbar{
+    @include media-breakpoint-down(md){
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.9) 105%) !important;
+        box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.5);
+    }
+    transition: 0.8s;
+    background-image: linear-gradient(to bottom, #eef1f5 5%, rgba(46,56,66,0) 105%);
+}
+
+//remove nav image to keep navbar small on sm devices
+nav .navbar-brand img{
+    @include media-breakpoint-down(md){
+        display: none;
+    }
+}
+
+nav a.navbar-brand::after{
+    @include media-breakpoint-down(md){
+        font-family: $sans;
+        font-weight: $_bold;
+        color: $red;
+        content: "\039B "+" W M "+"\039B";
+    }
+}
+
+nav .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(171, 35, 40)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+//transform header on large screens on scroll
+nav.black {
+    @include media-breakpoint-up(lg){
+        background: $white !important;
+        height: 9vh;
+        box-shadow: 6px 6px 10px 0 rgba(0,0,0,0.5);
+    }
+}
+
+nav.black .navbar-brand img{
+    @include media-breakpoint-up(lg){
+        content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
+        height: 100px;
+        width: 100px;
+    }
+}
+
+nav.black .collapse{
+    @include media-breakpoint-up(lg){
+        justify-content: center !important;
+        transition: .5s;
+    }
+}
 
 .nav-item{
     margin-left: 1.5em;
