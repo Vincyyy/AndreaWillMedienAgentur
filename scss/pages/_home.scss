@@ -46,18 +46,12 @@ $smartphone2018-horizontal-height: 412px;
      width: auto;
 }
 
-.hero-disclaimer{
-    font-size: 1.1rem;
-    font-weight: 200;
-
-    @media screen and (max-height: $smartphone2018-horizontal-height) {
-        font-size: 0.9rem;
-    }
-
+.hero-underline{
     //then display logo instead
     @include media-breakpoint-down(md){ //down-sm vs down-md?
         display: none;
     }
+    margin-top: -3vh;
 }
 
 .hero-text{

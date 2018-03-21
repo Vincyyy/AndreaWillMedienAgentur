@@ -5119,14 +5119,10 @@ a {
     .hero-logo {
       display: none; } }
 
-.hero-disclaimer {
-  font-size: 1.1rem;
-  font-weight: 200; }
-  @media screen and (max-height: 412px) {
-    .hero-disclaimer {
-      font-size: 0.9rem; } }
+.hero-underline {
+  margin-top: -3vh; }
   @media (max-width: 991.99px) {
-    .hero-disclaimer {
+    .hero-underline {
       display: none; } }
 
 .hero-text {
