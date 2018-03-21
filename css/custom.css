@@ -5276,4 +5276,10 @@ p {
 h5 {
   margin-bottom: 2vh; }
 
+a {
+  word-wrap: break-word; }
+
+.large-word {
+  word-wrap: break-word; }
+
 /*# sourceMappingURL=custom.css.map */
