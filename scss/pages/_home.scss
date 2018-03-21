@@ -113,7 +113,8 @@ nav.black .collapse{
      }
 
      max-width: 80vw;
-     //max-height: 17vh;
+     height: auto;
+     width: auto;
 }
 
 .hero-disclaimer{
@@ -288,8 +289,8 @@ nav.black .collapse{
 }
 
 .contact-heading{
-    @include media-breakpoint-down(md){
-        margin-top:10vh;    
+    @include media-breakpoint-up(sd){
+        display: none;   
     }
     margin-top: 5vw;
     margin-bottom: 1vh;
@@ -297,6 +298,9 @@ nav.black .collapse{
 
 .contact-cards{
     font-size: .9em;
+    @include media-breakpoint-up(sd){
+        margin-top: 5vh;   
+    }
 }
 
 .contact-info{
