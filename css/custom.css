@@ -5030,7 +5030,7 @@ nav .navbar-toggler .navbar-toggler-icon {
 @media (min-width: 992px) {
   nav.black .navbar-brand img {
     content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
-    max-height: 12vh;
+    max-height: 10vh;
     max-width: 12vh; } }
 
 @media (min-width: 992px) {
@@ -5151,11 +5151,12 @@ a {
   align-items: center; }
 
 .about-title-img {
-  max-height: 27vw;
-  min-height: 27vw;
+  max-height: 25vw;
+  min-height: 25vw;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
   border-radius: 60%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 5vh; }
   @media (max-width: 767.99px) {
     .about-title-img {
       display: none; } }
