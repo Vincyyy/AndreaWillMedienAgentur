@@ -5030,8 +5030,8 @@ nav .navbar-toggler .navbar-toggler-icon {
 @media (min-width: 992px) {
   nav.black .navbar-brand img {
     content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
-    max-height: 13vh;
-    max-width: 100px; } }
+    max-height: 12vh;
+    max-width: 12vh; } }
 
 @media (min-width: 992px) {
   nav.black .collapse {
