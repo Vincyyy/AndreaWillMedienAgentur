@@ -41,7 +41,9 @@ $smartphone2018-horizontal-height: 412px;
          display: none;
      }
 
-     max-width: 80vw;
+     margin-top: 3vh;
+     //vmax takes the largest side as reference
+     max-width: 50vmax;
      height: auto;
      width: auto;
 }
@@ -51,7 +53,7 @@ $smartphone2018-horizontal-height: 412px;
     @include media-breakpoint-down(md){ //down-sm vs down-md?
         display: none;
     }
-    margin-top: -3vh;
+    margin-top: -2vh;
 }
 
 .hero-text{
