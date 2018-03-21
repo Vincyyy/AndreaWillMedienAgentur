@@ -218,17 +218,21 @@ $smartphone2018-horizontal-height: 412px;
 }
 
 .contact-heading{
-    @include media-breakpoint-up(sd){
+    @include media-breakpoint-down(sm){
         display: none;   
     }
-    margin-top: 5vw;
+
+    @include media-breakpoint-up(xl){
+        margin-top: 8vh;   
+    }
+    margin-top: 15vh;
     margin-bottom: 1vh;
 }
 
 .contact-cards{
     font-size: .9em;
-    @include media-breakpoint-up(sd){
-        margin-top: 5vh;   
+    @include media-breakpoint-down(sm){
+        margin-top: 8vh;   
     }
 }
 

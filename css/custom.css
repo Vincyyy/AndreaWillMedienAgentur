@@ -5030,8 +5030,8 @@ nav .navbar-toggler .navbar-toggler-icon {
 @media (min-width: 992px) {
   nav.black .navbar-brand img {
     content: url("../img/img_awma/logo/Logo_Andrea-Will_RGB_2.png");
-    height: 100px;
-    width: 100px; } }
+    max-height: 13vh;
+    max-width: 100px; } }
 
 @media (min-width: 992px) {
   nav.black .collapse {
@@ -5086,6 +5086,9 @@ footer {
   font-family: FontAwesome;
   content: '\f0d4';
   font-size: 50px; }
+
+a {
+  font-size: 0.9em; }
 
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/img_awma/hero_bg_sized.jpg);
@@ -5242,13 +5245,20 @@ footer {
   margin-top: 2em; }
 
 .contact-heading {
-  display: none;
-  margin-top: 5vw;
+  margin-top: 15vh;
   margin-bottom: 1vh; }
+  @media (max-width: 767.99px) {
+    .contact-heading {
+      display: none; } }
+  @media (min-width: 1200px) {
+    .contact-heading {
+      margin-top: 8vh; } }
 
 .contact-cards {
-  font-size: .9em;
-  margin-top: 5vh; }
+  font-size: .9em; }
+  @media (max-width: 767.99px) {
+    .contact-cards {
+      margin-top: 8vh; } }
 
 .contact-info {
   display: flex;
@@ -5271,7 +5281,8 @@ footer {
   color: black; }
 
 p {
-  margin-bottom: 4vh; }
+  margin-bottom: 4vh;
+  font-size: 0.9em; }
 
 h5 {
   margin-bottom: 2vh; }
