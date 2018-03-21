@@ -5174,20 +5174,20 @@ a {
   border-top: solid 2px;
   border-color: white; }
 
-.band-members {
+.services {
   border-top: 0px;
   position: relative; }
   @media (max-width: 767.99px) {
-    .band-members {
+    .services {
       padding-top: 10vh; } }
 
-.band-member {
+.service {
   margin-bottom: 1.5em;
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.5);
   background: #d8d0d0;
   font-size: .9em; }
   @media (min-width: 768px) {
-    .band-member {
+    .service {
       position: absolute;
       top: -1.5em;
       z-index: 100;
@@ -5195,18 +5195,18 @@ a {
       word-break: keep-all;
       font-size: 1.0rem; } }
 
-.band-member-name {
+.service-name {
   font-family: "Comfortaa", sans-serif;
   text-transform: uppercase;
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   border: 0; }
 
+.service-details {
+  color: black; }
+
 .card-img-top {
   max-height: 66vh; }
-
-.band-member-position {
-  color: black; }
 
 .card-text:last-child {
   margin-bottom: 1.5em; }

@@ -115,7 +115,7 @@ $smartphone2018-horizontal-height: 412px;
     border-color: white;
 }
 
-.band-members{
+.services{
     border-top: 0px;
 
     //orientation coordinates for next absolute object
@@ -126,7 +126,7 @@ $smartphone2018-horizontal-height: 412px;
     }    
 }
 
-.band-member{
+.service{
     margin-bottom: 1.5em;
     box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.5);
     background: $body-bg;
@@ -145,12 +145,17 @@ $smartphone2018-horizontal-height: 412px;
     }
 }
 
-.band-member-name{
+.service-name{
     font-family: $sans;
     text-transform: uppercase;
     margin-top: 0.8em;
     margin-bottom: 0.25em;
     border: 0;
+}
+
+
+.service-details{
+    color: black;
 }
 
 .card-img-top{
@@ -165,10 +170,6 @@ $smartphone2018-horizontal-height: 412px;
 //     padding-top: 2vh;
 //     padding-bottom: 2vh;
 // }
- 
-.band-member-position{
-    color: black;
-}
 
 .card-text:last-child {
     margin-bottom: 1.5em;
