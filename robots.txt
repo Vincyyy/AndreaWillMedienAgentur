@@ -1,0 +1,5 @@
+# robots.txt for  http://aw-medienagentur.de
+
+Sitemap: http://aw-medienagentur.de/sitemap.xml
+User-agent: *
+Allow: /
